@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruits-burst</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/f6ab4d6246.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .lato{
+            font-family: 'Lato', sans-serif;;
+        }
+    </style>
+
 </head>
 <body>
-    
+    <!-- ===header section=== -->
+    <header class="container mx-auto">
+        <!-- ==nav== -->
+        <nav class="flex justify-between items-center bg-[#F85559] rounded-full px-7 py-2">
+            <div>
+                <ul class="flex gap-6 text-[#fff] font-medium">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-3">
+                <img src="./images/logo.png">
+                <h3 class="text-[#fff] text-4xl font-bold">Fruit Burst</h3>
+            </div>
+            <div>
+                <div class="relative">
+                    <i class="fa-solid fa-magnifying-glass absolute top-4 left-44"></i>
+                    <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs text-[#12121266]" disabled />
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
