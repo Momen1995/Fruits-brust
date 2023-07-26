@@ -32,25 +32,45 @@
     <!-- ===header section=== -->
     <header class="container mx-auto">
         <!-- ==nav== -->
-        <nav class="flex justify-between items-center bg-[#F85559] rounded-full px-7 py-2">
-            <div>
-                <ul class="flex gap-6 text-[#fff] font-medium">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">All Fruits</a></li>
-                </ul>
+        <nav>
+          <div class="navbar flex justify-between items-center  lg:bg-[#F85559] rounded-full px-7 py-2">
+            <div class="navbar-start hidden lg:flex md:flex">
+              <ul class="flex gap-6 text-[#fff] font-medium  ">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">All Fruits</a></li>
+            </ul>
             </div>
-            <div class="flex items-center gap-3">
+
+            <div class="navbar-center ">
+              <div class="flex items-center gap-3">
                 <img src="./images/logo.png">
                 <h3 class="text-[#fff] text-4xl font-bold">Fruit Burst</h3>
             </div>
-            <div>
-                <div class="relative">
-                    <i class="fa-solid fa-magnifying-glass absolute top-4 left-44"></i>
-                    <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs text-[#12121266]" disabled />
-                </div>
             </div>
+
+            <div class="navbar-end ">
+              <div class="relative hidden lg:inline">
+                  <i class="fa-solid fa-magnifying-glass absolute top-4 left-44"></i>
+                  <input type="text" placeholder="Search here" class="input input-bordered w-full max-w-xs text-[#12121266]" disabled />
+              </div>
+          </div>
+            
+            <div class="navbar-end lg:hidden">
+              <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-md dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-40 ">
+                  <li><a>Home</a></li>
+                  <li><a>About Us</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>All Fruits</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </nav>
 
         <!-- ===hero section -->
@@ -125,7 +145,7 @@
          </div>
 
           <!-- extra banner-->
-          <div class="flex justify-between items-center w-2/3 mx-auto bg-[#fff] rounded-lg relative -top-24 p-8 box-shadow">
+          <div class="flex justify-between items-center w-2/3 mx-auto bg-[#fff] rounded-lg relative -top-24 p-8 box-shadow hidden lg:flex">
             <div class="text-center">
               <img src="./images/fruit1.png">
               <p>Strawberry</p>
@@ -511,7 +531,7 @@
         </div>
         <!-- ====== -->
         <div class="grid grid-cols-1 gap-10 lg:grid-cols-3 mt-12">
-          <div class="flex flex-col gap-5">
+          <div class="flex flex-col gap-7">
             <div class="flex items-center justify-center gap-6">
               <div>
                 <i class="fa-solid fa-users bg-[#1212111a] p-3 rounded-full" style="color: #72767e;"></i>
@@ -551,7 +571,7 @@
           </div>
 
           <!-- ===== -->
-          <div class="flex flex-col gap-5 text-right">
+          <div class="flex flex-col gap-7 text-right">
             <div class="flex items-center justify-center gap-6">
               <div class="space-y-2">
                 <h4 class="text-[#121212] text-2xl font-extrabold">Integrated Supplier</h4>
@@ -589,5 +609,30 @@
         </div>
       </section>
     </main>
+
+    <footer class="footer footer-center p-16 bg-[#121212] text-base-content rounded mt-20">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="./images/logo.png">
+          <h3 class="text-[#fff] text-4xl font-bold">Fruit Burst</h3>
+      </div>
+      </div>
+      <div class="grid grid-cols-3 lg:grid-cols-6 gap-7 text-[#fff] text-[17px]">
+        <a>Home</a>
+        <a>About us</a> 
+        <a>Shop</a> 
+        <a>All Fruit</a>
+        <a>Support</a> 
+        <a>My Account</a>
+      </div> 
+
+      <div class="flex  gap-4 text-[#fff] text-2xl">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+     
+    </footer>
 </body>
 </html>
